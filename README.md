@@ -1,20 +1,86 @@
-<p align="center"><img src="https://github.com/NotCookey/Rainy/assets/88582190/fc09007d-43a8-4526-8824-ad684a303d52" width="130px"></p>
-<h2 align="center">Rainy Musicart</h2>
-<p align="center"><b>Rainy Musicart is a lightweight music player with an aesthetically pleasing design~</b></p>
-<kbd><img src="https://user-images.githubusercontent.com/88582190/266058070-c806c611-f65c-459f-bce3-e2ea2a175db3.png"></kbd>
+# 🎵 Rainy Music Player  
 
-## About
-- **Rainy Musicart is a lightweight music player built in Python that makes use of the lovely [DearPyGui](https://github.com/hoffstadt/DearPyGui/) for the aesthetically designed interface as well as a number of third-party libraries.**
+A lightweight and modern **music player** built in **Python** using [DearPyGui](https://github.com/hoffstadt/DearPyGui) and [Pygame](https://www.pygame.org/).  
+It supports adding songs, playlists, playback controls, and a neat UI.  
 
-## Install
-- **Download the repository**
-- **Install dependencies using pip `pip install -r requirements.txt`**
-- **Run Rainy.py**
+---
 
-## Is it open-source?
-- **Licensed Under [GPL-3.0](https://github.com/NotCookey/Rainy/blob/main/LICENSE)**
+## ✨ Features
+- 🎶 Play, Pause, Stop, Next, and Previous controls  
+- 📂 Add **single files** or **entire folders**  
+- 🔎 Search songs in your playlist  
+- 💾 Persists songs in `songs.json` (so your list is saved)  
+- 🔊 Volume and seek slider  
+- 🎨 Custom theme with DearPyGui  
+- ⏱️ Displays current state and "Now Playing" info  
 
-## Thank you
-> **Thank you for visiting, Hope you found something useful!**
+---
 
-> **Developed and Maintained By [NotCookey](https://github.com/NotCookey)**
+## 🛠️ Installation
+
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/PATHANIAOO/Rainy.git
+   cd Rainy
+   ```
+
+2. **Create virtual environment** (optional but recommended)
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate   # Windows
+   source venv/bin/activate  # Linux/Mac
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(If you don’t have `requirements.txt`, just run:)*  
+   ```bash
+   pip install dearpygui pygame mutagen
+   ```
+
+4. **Ensure project structure**
+   ```
+   Rainy/
+   ├── main.py
+   ├── icon.ico
+   ├── data/
+   │    └── songs.json
+   ├── fonts/
+   │    └── MonoLisa-Bold.ttf
+   ```
+
+5. **Run the app**
+   ```bash
+   python main.py
+   ```
+
+---
+
+## 📂 songs.json
+Make sure `data/songs.json` exists before running:  
+```json
+{
+  "songs": []
+}
+```
+
+---
+
+## 🎯 Tech Stack
+- **Python 3.x**
+- **DearPyGui** – modern UI  
+- **Pygame** – audio playback  
+- **Mutagen** – MP3 metadata  
+- **Tkinter** – file/folder selection  
+
+---
+
+## 📸 Screenshots
+(Add screenshots of your player UI here, e.g. playing a song)  
+
+---
+
+## 📜 License
+MIT License © 2025  
